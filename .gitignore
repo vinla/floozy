@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Floozy/obj
+/Floozy/bin/Debug/netstandard2.0
+/Floozy.Sample/bin/Debug/netstandard2.0
+/Floozy.Sample/obj
+/Floozy.Sample/bin/Debug/netcoreapp2.0
