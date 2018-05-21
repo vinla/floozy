@@ -9,5 +9,10 @@ namespace Floozy
         {
             return new ElementLocator((d) => d.FindElement(By.Id(id)) );
         }
+
+        public ElementLocator FindByCss(string cssSelector)
+        {
+            return new ElementLocator(d => d.FindElement(By.CssSelector(cssSelector)));
+        }
     }    
 }

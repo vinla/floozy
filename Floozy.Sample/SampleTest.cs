@@ -24,12 +24,12 @@ namespace Floozy.Sample
 
     public class NugetHomePage : PageModelBase
     {
-        public ElementLocator SearchBox => new ElementLocator(d => d.FindElement(By.Id("search")));
-        public ElementLocator SearchButton => new ElementLocator(d => d.FindElement(By.CssSelector("btn-search")));
+        public ElementLocator SearchBox => FindById("search");
+        public ElementLocator SearchButton => FindByCss("btn-search");
     }
 
     public class SearchResultsPage : PageModelBase
     {
-        public ElementLocator TopResult => new ElementLocator(d => d.FindElement(By.CssSelector("a.package-title")));
+        public ElementLocator TopResult => FindByCss("a.package-title");
     }
 }
